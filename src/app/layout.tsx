@@ -10,6 +10,14 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+
+const roseMartin = localFont({
+  src: "./fonts/rosemartin.otf",
+  variable: "--font-rose-martin",
+  weight: "100 900",
+});
+
+
 const montSerrat =  Montserrat_Alternates({
   weight: ["100", "200","300", "400", "500"], 
   variable: "--font-montserrat",
@@ -30,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistMono.variable} ${montSerrat.variable} antialiased`}
+        className={`${roseMartin.variable} ${geistMono.variable} ${montSerrat.variable} antialiased`}
       >
         {children}
       </body>
